@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Special Letter for Dishu</title>
+<style>
+body {
+  background: #ffeef3;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  max-width: 500px;
+}
+.envelope {
+  background: #fff0f5;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px pink;
+  transition: 0.5s;
+}
+button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  background: #ff4f8b;
+  color: white;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.message {
+  text-align: left;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="envelope" id="envelope">
+    <h2>💌 A Special Letter 💌</h2>
+    <p>From my heart to yours</p>
+    <button onclick="openLetter()">Open My Heart ❤️</button>
+  </div>
+
+  <div class="message hidden" id="message">
+    <p>Hey Dishu 💖,</p>
+    <p>
+      I wanted to do something special for you,<br>
+      because you truly matter to me.<br><br>
+
+      I’m really sorry from the bottom of my heart if my words or actions hurt you in any way.<br>
+      That was never my intention.<br><br>
+
+      I want you to know something honestly —<br>
+      I don’t care about my friends if it means losing you.<br>
+      I am ready to change myself completely.<br>
+      I don’t want to forget you, I just want you.<br>
+      I only want a chance to prove myself to you.<br><br>
+
+      You mean a lot to me, more than I can ever explain.<br>
+      Your presence, your care, and your smile make my world brighter.<br><br>
+
+      🌟 <b>Special Qualities:</b><br>
+      Your kindness, honesty, and caring nature make you truly special.<br><br>
+
+      🌸 <b>Memorable Moments:</b><br>
+      Every little moment with you feels special — our conversations, your smiles, and the times when everything felt peaceful because you were there.<br><br>
+
+      💖 <b>What I Love About You:</b><br>
+      I love the way you care, the way you listen, and the comfort I feel when I talk to you.<br><br>
+
+      I love you, Dishu 🤍<br>
+      Tomorrow is the start of a New Year, so let’s begin a new chapter together, with a new beginning and a better understanding.<br><br>
+
+      Always yours,<br>
+      — Parth
+    </p>
+  </div>
+</div>
+
+<!-- Background music using YouTube embed -->
+<div class="hidden" id="music">
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/3lS0vPO5EIk?autoplay=1&loop=1&playlist=3lS0vPO5EIk" frameborder="0" allow="autoplay"></iframe>
+</div>
+
+<script>
+function openLetter() {
+  document.getElementById('envelope').classList.add('hidden');
+  document.getElementById('message').classList.remove('hidden');
+  document.getElementById('music').classList.remove('hidden');
+}
+</script>
+
+</body>
+  </html>
